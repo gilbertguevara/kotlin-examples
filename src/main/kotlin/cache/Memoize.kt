@@ -10,6 +10,7 @@ inline fun <Any, R> GenericCache<Any, R>.getOrPut(prefixKey: String = "", key: A
         this[fullKey] = answer
         answer
     } else {
+        println("Returning value from cache")
         value
     }
 }

@@ -12,6 +12,7 @@ repositories {
 dependencies {
     implementation(kotlin("reflect"))
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.1-Beta")
+    implementation("com.github.javafaker:javafaker:1.0.2")
 
     testImplementation(kotlin("test"))
 }
