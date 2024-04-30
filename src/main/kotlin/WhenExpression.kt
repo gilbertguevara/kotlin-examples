@@ -4,9 +4,7 @@ fun main(args: Array<String>) {
     val b = 5
 
     println("Enter operator either +, -, * or /")
-    val operator = readLine()
-
-    val result = when (operator) {
+    val result = when (val operator = readlnOrNull()) {
         "+" -> a + b
         "-" -> a - b
         "*" -> a * b

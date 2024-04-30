@@ -4,9 +4,7 @@ fun main(args: Array<String>) {
     val b = 5
 
     println("Enter operator either +, -, * or /")
-    val operator = readLine()
-
-    when (operator) {
+    when (val operator = readlnOrNull()) {
         "+" -> println("$a + $b = ${a + b}")
         "-" -> println("$a - $b = ${a - b}")
         "*" -> println("$a * $b = ${a * b}")

@@ -13,8 +13,8 @@ class ConstructorsInheritance {
         override fun toString(): String = "$x, $y"
     }
 
-    class Color(private val code: String) {
-        override fun toString(): String = code
+    class Color(private val code: Int) {
+        override fun toString(): String = code.toString(16)
     }
 
     class ColoredPoint(val color: Color, x: Int, y: Int) : Point(x, y) {
@@ -27,7 +27,7 @@ fun main() {
     val circle = ConstructorsInheritance.Circle(10.0, pointAtTen)
     val point = ConstructorsInheritance.Point(pointAtTen)
     val pointFromCircle = ConstructorsInheritance.Point(circle)
-    val coloredPoint = ConstructorsInheritance.ColoredPoint(ConstructorsInheritance.Color("#FFFFFF"), 5, 5)
+    val coloredPoint = ConstructorsInheritance.ColoredPoint(ConstructorsInheritance.Color(0XFFFFFF), 5, 5)
 
     println(circle.radius)
     println(circle.center)
